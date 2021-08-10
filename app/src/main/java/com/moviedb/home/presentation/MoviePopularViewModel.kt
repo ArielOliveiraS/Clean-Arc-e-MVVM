@@ -9,7 +9,7 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.coroutines.*
 
 
-class MoviePopularViewModel(private val moviePopularUseCase: MoviePopularUseCase) : ViewModel() {
+internal class MoviePopularViewModel(private val moviePopularUseCase: MoviePopularUseCase) : ViewModel() {
 
     val movieResult: MutableLiveData<MovieResponse> = MutableLiveData()
     private val error: MutableLiveData<String> = MutableLiveData()

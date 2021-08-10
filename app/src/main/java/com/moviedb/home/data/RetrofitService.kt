@@ -11,7 +11,7 @@ const val API_KEY = "1efd8cd26867ff738891e74665d8c9b9"
 const val POSTER_BASE_URL = "https://image.tmdb.org/t/p/w500/"
 
 
-class RetrofitService {
+internal class RetrofitService {
     companion object {
         val service: MovieApi
 

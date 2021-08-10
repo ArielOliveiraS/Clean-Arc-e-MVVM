@@ -8,7 +8,7 @@ import kotlinx.coroutines.*
 
 const val API_KEY = "1efd8cd26867ff738891e74665d8c9b9"
 
-class MoviePopularUseCase(private val repository: MoviePopularRepository) {
+internal class MoviePopularUseCase(private val repository: MoviePopularRepository) {
 
     operator fun invoke(): Single<MovieResponse> {
         return repository.getPopularMovies(API_KEY)

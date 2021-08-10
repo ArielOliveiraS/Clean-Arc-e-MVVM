@@ -10,7 +10,7 @@ import com.moviedb.home.data.models.MovieItem
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.movie_item.view.*
 
-class MovieAdapter(var list: MutableList<MovieItem>):
+internal class MovieAdapter(var list: MutableList<MovieItem>):
         RecyclerView.Adapter<MovieAdapter.ViewHolder>(){
 
 

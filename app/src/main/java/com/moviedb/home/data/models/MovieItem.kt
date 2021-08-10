@@ -2,7 +2,7 @@ package com.moviedb.home.data.models
 
 import com.google.gson.annotations.SerializedName
 
-data class MovieItem(
+internal data class MovieItem(
     val budget: Int,
     val id: Int,
     val overview: String,

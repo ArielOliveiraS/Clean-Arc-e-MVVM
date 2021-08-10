@@ -12,7 +12,7 @@ import com.moviedb.utils.HttpClient
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module
 
-class Module {
+internal class Module {
     companion object {
         val dataModule = module {
             factory { get<HttpClient>().create(service = MovieApi::class.java) }

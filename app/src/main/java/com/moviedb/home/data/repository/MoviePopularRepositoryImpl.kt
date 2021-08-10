@@ -6,7 +6,7 @@ import com.moviedb.home.domain.repository.MoviePopularRepository
 import io.reactivex.Single
 import kotlinx.coroutines.Deferred
 
-class MoviePopularRepositoryImpl(private val remote: MovieRemoteDataSource): MoviePopularRepository {
+internal class MoviePopularRepositoryImpl(private val remote: MovieRemoteDataSource): MoviePopularRepository {
 
     override fun getPopularMovies(apiKey: String): Single<MovieResponse> {
         return remote.getPopularMovies(apiKey)
