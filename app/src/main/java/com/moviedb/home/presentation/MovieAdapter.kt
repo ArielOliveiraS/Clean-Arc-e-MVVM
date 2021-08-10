@@ -4,10 +4,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.moviedb.home.data.models.MovieItem
 import com.moviedb.R
 import com.moviedb.home.data.POSTER_BASE_URL
-import com.moviedb.home.domain.model.MovieItemResult
+import com.moviedb.home.data.models.MovieItem
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.movie_item.view.*
 

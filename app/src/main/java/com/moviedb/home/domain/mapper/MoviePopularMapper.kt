@@ -1,6 +1,6 @@
-//package com.moviedb.home.domain.mapper
-//
-//import com.moviedb.home.data.models.MovieItem
+package com.moviedb.home.domain.mapper
+
+//import com.moviedb.moviedetail.data.models.MovieItem
 //import com.moviedb.home.domain.model.MovieItemResult
 //import com.moviedb.utils.Mapper
 //

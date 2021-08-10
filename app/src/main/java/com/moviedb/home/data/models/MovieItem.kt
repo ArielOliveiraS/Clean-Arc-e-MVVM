@@ -6,6 +6,7 @@ data class MovieItem(
     val budget: Int,
     val id: Int,
     val overview: String,
+    val genre_id: List<Int>,
     val popularity: Double,
     @SerializedName("poster_path")
     val posterPath: String,
