@@ -11,10 +11,6 @@ internal class MoviePopularRepositoryImpl(private val remote: MovieRemoteDataSou
     override fun getPopularMovies(apiKey: String): Single<MovieResponse> {
         return remote.getPopularMovies(apiKey)
     }
-
-//    override suspend fun getPopularMovies(apiKey: String): MovieResponse {
-//        return remote.getPopularMovies(apiKey)
-//    }
 }
 
 

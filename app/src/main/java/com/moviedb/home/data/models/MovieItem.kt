@@ -3,10 +3,10 @@ package com.moviedb.home.data.models
 import com.google.gson.annotations.SerializedName
 
 internal data class MovieItem(
-    val budget: Int,
+    val budget: Int? = 0,
     val id: Int,
     val overview: String,
-    val genre_id: List<Int>,
+    val genre_id: List<Int>? = listOf(),
     val popularity: Double,
     @SerializedName("poster_path")
     val posterPath: String,

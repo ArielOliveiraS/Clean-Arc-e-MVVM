@@ -1,4 +1,4 @@
-package com.moviedb.home.presentation
+package com.moviedb.home.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,10 +7,12 @@ import androidx.recyclerview.widget.RecyclerView
 import com.moviedb.R
 import com.moviedb.home.data.POSTER_BASE_URL
 import com.moviedb.home.data.models.MovieItem
+import com.moviedb.home.domain.model.MovieItemResult
+import com.moviedb.home.presentation.MovieListener
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.movie_item.view.*
 
-internal class MovieAdapter(var list: MutableList<MovieItem>):
+internal class MovieAdapter(var list: MutableList<MovieItem>, private val movieListener: MovieListener?):
         RecyclerView.Adapter<MovieAdapter.ViewHolder>(){
 
 
@@ -24,8 +26,13 @@ internal class MovieAdapter(var list: MutableList<MovieItem>):
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+
         val characters = list[position]
         holder.onBind(characters)
+
+        holder.itemView.setOnClickListener {
+            movieListener?.openMovieDetails(list[position].id)
+        }
     }
 
     fun updateList(newList: MutableList<MovieItem>) {

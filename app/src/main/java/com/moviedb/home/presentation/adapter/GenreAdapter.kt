@@ -1,4 +1,4 @@
-package com.moviedb.home.presentation
+package com.moviedb.home.presentation.adapter
 
 import android.view.LayoutInflater
 import android.view.View

@@ -10,8 +10,6 @@ internal interface MovieApi {
 
     @GET("movie/popular")
     fun getPopularMovies(@Query("api_key") apiKey: String): Single<MovieResponse>
-
-    //suspend fun getPopularMovies(@Query("api_key") apiKey: String): MovieResponse
 }
 
 

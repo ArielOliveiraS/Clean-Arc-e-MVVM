@@ -6,8 +6,4 @@ import kotlinx.coroutines.Deferred
 
 internal interface MovieRemoteDataSource {
     fun getPopularMovies(apiKey: String): Single<MovieResponse>
-
-    //suspend fun getPopularMovies(apiKey: String): MovieResponse
-
-    //suspend fun getPopularMovies(apiKey: String): MovieResponse
 }

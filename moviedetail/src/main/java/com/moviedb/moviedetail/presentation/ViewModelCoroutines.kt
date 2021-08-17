@@ -1,4 +1,4 @@
-package com.moviedb.home.presentation
+package com.moviedb.moviedetail.presentation
 
 import androidx.lifecycle.ViewModel
 import kotlinx.coroutines.CoroutineScope
