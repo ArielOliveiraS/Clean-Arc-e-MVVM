@@ -1,4 +1,4 @@
-package com.moviedb.home.domain.mapper
+package com.moviedb.moviedetail.domain.mapper
 
 //import com.moviedb.moviedetail.data.models.MovieItem
 //import com.moviedb.home.domain.model.MovieItemResult

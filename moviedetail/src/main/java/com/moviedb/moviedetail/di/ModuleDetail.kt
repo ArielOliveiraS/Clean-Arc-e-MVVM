@@ -1,12 +1,13 @@
 package com.moviedb.moviedetail.di
 
 import com.moviedb.moviedetail.data.api.MovieApi
-import com.moviedb.moviedetail.data.source.MovieRemoteDataSourceImpl
+import com.moviedb.moviedetail.data.datasource.MovieRemoteDataSourceImpl
 import com.moviedb.moviedetail.data.repository.MovieDetailRepositoryImpl
-import com.moviedb.moviedetail.data.source.MovieDetailRemoteDataSource
+import com.moviedb.moviedetail.data.datasource.MovieDetailRemoteDataSource
 import com.moviedb.moviedetail.domain.repository.MovieDetailRepository
-import com.moviedb.moviedetail.domain.usecases.MovieDetailUseCase
+import com.moviedb.moviedetail.domain.usecase.MovieDetailUseCase
 import com.moviedb.moviedetail.presentation.MovieDetailViewModel
+import com.utils.FeatureModule
 import com.utils.HttpClient
 import org.koin.androidx.viewmodel.dsl.viewModel
 import org.koin.dsl.module

@@ -16,14 +16,7 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_movie_detail)
-
-        //val viewModel = ViewModelProviders.of(this).get(MovieDetailViewModel::class.java)
-
-//        startKoin {
-//            androidContext(this@DetailActivity)
-//            modules(listOf(dataModule, domainModule, presentationModule ))
-//        }
-
+        
         val movieId: Int = intent.getIntExtra("movie_id", -1)
 
         if (movieId != null) {

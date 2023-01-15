@@ -1,4 +1,4 @@
-package com.moviedb.moviedetail.di
+package com.utils
 
 import org.koin.core.context.loadKoinModules
 import org.koin.core.module.Module
