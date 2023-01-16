@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity(), MovieListener {
         genreRecyclerView.layoutManager = layoutManager2
 
         viewModel.getPopularMovies()
-        Log.i("teste", "activity")
 
         viewModel.movieResult.observe(this, Observer {
             adapter.updateList(it.results)

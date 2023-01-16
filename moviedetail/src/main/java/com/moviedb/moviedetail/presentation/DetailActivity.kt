@@ -19,7 +19,7 @@ class DetailActivity : AppCompatActivity() {
         
         val movieId: Int = intent.getIntExtra("movie_id", -1)
 
-        if (movieId != null) {
+        if (movieId != -1) {
             viewModel.getPopularMovies(movieId)
             viewModel.movieResult.observe(this, Observer { movie ->
                 Picasso.get().load(POSTER_BASE_URL + movie.posterPath).into(posterMovie)

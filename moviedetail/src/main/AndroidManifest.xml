@@ -3,7 +3,6 @@
     package="com.moviedb.moviedetail">
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application>
         <activity
             android:name=".presentation.DetailActivity"
